@@ -22,6 +22,9 @@
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <swagger.version>2.7.0</swagger.version>
+
     </properties>
 
     <dependencies>
@@ -53,6 +56,18 @@
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>2.0.32</version>
+        </dependency>
+
+        <!-- swagger： 对 RESTful 风格的 web API，自动生成网页版本的接口文档，供开发查看使用 -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${swagger.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${swagger.version}</version>
         </dependency>
 
         <!-- 零碎依赖 结束 -->
