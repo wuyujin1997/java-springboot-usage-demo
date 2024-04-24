@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/><style>
+    table {border: medium solid #6495ed;border-collapse: collapse;width: 100%;} th{font-family: monospace;border: thin solid #6495ed;padding: 5px;background-color: #D0E3FA;}td{font-family: sans-serif;border: thin solid #6495ed;padding: 5px;text-align: center;}.odd{background:#e8edff;}img{padding:5px; border:solid; border-color: #dddddd #aaaaaa #aaaaaa #dddddd; border-width: 1px 2px 2px 1px; background-color:white;}</style>
+</head>
+<body>
+<h1>我的博客：<a href="https://blog.csdn.net/wuyujin1997">CSDN</a></h1>
+<pre><code>
+flyway 会把它执行sql脚本的历史记录默认存在 flyway_schema_history 表中，你可以通过 spring.flyway.table=flyway_schema_history 配置项自己指定目这个表名。
+这个表中需要注意的列： checksum
+</code></pre>
+<table><tr><th colspan="10">select * from flyway_schema_history order by installed_rank desc </th></tr><tr><th>installed_rank</th><th>version</th><th>description</th><th>type</th><th>script</th><th>checksum</th><th>installed_by</th><th>installed_on</th><th>execution_time</th><th>success</th></tr><tr class="odd"><td>3</td><td>1.0.0.202404242319</td><td>alert my table</td><td>SQL</td><td>V1.0.0.202404242319__alert_my_table.sql</td><td>-844,187,322</td><td>root</td><td>2024-04-24 23:31:44</td><td>70</td><td>1</td></tr>
+    <tr><td>2</td><td>1.0.0.202404242304</td><td>create my first table</td><td>SQL</td><td>V1.0.0.202404242304__create_my_first_table.sql</td><td>-1,039,306,556</td><td>root</td><td>2024-04-24 23:07:31</td><td>176</td><td>1</td></tr>
+    <tr class="odd"><td>1</td><td>1</td><td>&lt;&lt; Flyway Baseline &gt;&gt;</td><td>BASELINE</td><td>&lt;&lt; Flyway Baseline &gt;&gt;</td><td>&nbsp;</td><td>root</td><td>2024-04-24 23:07:31</td><td>0</td><td>1</td></tr>
+</table></body></html>

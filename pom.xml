@@ -45,6 +45,23 @@
         </dependency>
         <!-- SpringBoot 相关依赖 结束 -->
 
+        <!-- mysql JDBC + flyway  START -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.21</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-core</artifactId>
+            <version>7.2.0</version>
+        </dependency>
+        <!-- mysql JDBC + flyway    END -->
+
         <!-- 零碎依赖 开始 -->
         <dependency>
             <groupId>org.projectlombok</groupId>
