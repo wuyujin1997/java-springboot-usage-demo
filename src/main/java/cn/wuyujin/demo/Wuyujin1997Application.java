@@ -8,10 +8,10 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @Slf4j
 @EnableSwagger2
 @SpringBootApplication
-public class DemoApplication {
+public class Wuyujin1997Application {
     public static void main(String[] args) {
-        log.info("DemoApplication start run...");
-        SpringApplication.run(DemoApplication.class, args);
-        log.info("DemoApplication run successfully!");
+        log.info("Wuyujin1997Application start run...");
+        SpringApplication.run(Wuyujin1997Application.class, args);
+        log.info("Wuyujin1997Application run successfully!");
     }
 }
