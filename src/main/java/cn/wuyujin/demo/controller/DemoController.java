@@ -1,6 +1,7 @@
 package cn.wuyujin.demo.controller;
 
 import cn.wuyujin.demo.bean.Person;
+import cn.wuyujin.demo.bean.constant.PathConstant;
 import com.alibaba.fastjson2.JSON;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,15 +10,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
 @RestController
-@RequestMapping("/v1/demo")
+@RequestMapping(PathConstant.V1_DEMO)
 public class DemoController {
 
-    @GetMapping("/hello")
+    @GetMapping(PathConstant.DEMO_HELLO)
     public String hello(String name) {
         return "你好啊，" + name;
     }
 
-    @GetMapping("/testJson")
+    @GetMapping(PathConstant.DEMO_TESTJSON)
     public Person testJson(String name, Integer age) {
         Person person = Person.builder()
                 .name(name)
