@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.wuyujin.demo.mapper.WeiboMapper">
+
+    <!-- 一开始在 type、resultType 中使用自定义类型名的时候：
+        要么写类型的全限定名称：包名.类型名。
+        嫌麻烦？那就在 application.properties 中配置 mybatis.type-aliases-package 为指定的多个包下的类型设置别名(默认是className，即不带包名)。
+        而对于在 mybatis.type-aliases-package 指定的包下的类，如果想自己定制化一个别名，可以用注解：org.apache.ibatis.type.Alias
+     -->
+    <select id="getWeiboOfUid" parameterType="String" resultType="myWeiboType">
+        select * from tb_weibo where uid = #{uid}
+    </select>
+
+</mapper>
