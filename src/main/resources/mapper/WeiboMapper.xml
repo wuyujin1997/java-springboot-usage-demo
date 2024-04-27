@@ -9,7 +9,9 @@
         而对于在 mybatis.type-aliases-package 指定的包下的类，如果想自己定制化一个别名，可以用注解：org.apache.ibatis.type.Alias
      -->
     <select id="getWeiboOfUid" parameterType="String" resultType="myWeiboType">
-        select * from tb_weibo where uid = #{uid}
+        select
+            id, uid, pub_region as 'pubRegion', pub_device as 'pubDevice', pub_time as 'pubTime', content
+        from tb_weibo where uid = #{uid}
     </select>
 
 </mapper>
