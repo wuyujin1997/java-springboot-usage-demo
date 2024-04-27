@@ -4,6 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -11,11 +12,13 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
+
     <groupId>org.example</groupId>
     <artifactId>java-springboot-usage-demo</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>java-springboot-usage-demo name</name>
     <description>java-springboot-usage-demo description</description>
+
 
     <properties>
         <java.version>11</java.version>
@@ -27,23 +30,34 @@
 
     </properties>
 
+
     <dependencies>
 
+        <!-- START -->
         <!-- SpringBoot 相关依赖 开始 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
+        <!-- 单元测试 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <!-- Spring MVC -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <!-- mybatis -->
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>2.0.1</version>
+        </dependency>
         <!-- SpringBoot 相关依赖 结束 -->
+        <!--   END -->
 
         <!-- mysql JDBC + flyway  START -->
         <dependency>
@@ -62,33 +76,17 @@
         </dependency>
         <!-- mysql JDBC + flyway    END -->
 
-        <!-- lombok  START -->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-<!--            <version>1.18.30</version>-->
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-<!--            <version>2.0.32</version>-->
-        </dependency>
-        <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>2.0.1</version>
-        </dependency>
-
-        <!-- lombok    END -->
 
         <!-- 零碎依赖 开始 -->
+
+        <!-- lombok  JavaBean 方法快速生成 -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+
+        <!-- fastjson JSON序列化 -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
@@ -111,11 +109,13 @@
 
     </dependencies>
 
+
     <dependencyManagement>
         <dependencies>
 
         </dependencies>
     </dependencyManagement>
+
 
     <build>
         <plugins>
