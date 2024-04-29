@@ -50,16 +50,15 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <!-- mybatis -->
+        <!-- redis -->
         <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>2.0.1</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
         <!-- SpringBoot 相关依赖 结束 -->
         <!--   END -->
 
-        <!-- mysql JDBC + flyway  START -->
+        <!-- mysql, JDBC, flyway, mybatis  START -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
@@ -74,7 +73,13 @@
             <artifactId>flyway-core</artifactId>
             <version>7.2.0</version>
         </dependency>
-        <!-- mysql JDBC + flyway    END -->
+        <!-- mybatis -->
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>2.0.1</version>
+        </dependency>
+        <!-- mysql, JDBC, flyway, mybatis    END -->
 
 
         <!-- 零碎依赖 开始 -->
