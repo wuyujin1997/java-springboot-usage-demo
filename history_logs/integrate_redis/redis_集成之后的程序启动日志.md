@@ -14,7 +14,7 @@
 ## web接口测试
 
 ```javascript
-fetch("http://localhost:8888/wuyujin/redis/redis?name=site&value=wuyujindotcom", {
+fetch("http://localhost:8888/wuyujin/v1/integrate/redis?name=site&value=wuyujindotcom", {
   "headers": {
     "accept": "application/json",
     "accept-language": "en",

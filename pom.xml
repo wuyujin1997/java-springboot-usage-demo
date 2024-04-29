@@ -58,6 +58,13 @@
         <!-- SpringBoot 相关依赖 结束 -->
         <!--   END -->
 
+        <!-- kafka START -->
+        <dependency>
+            <groupId>org.springframework.kafka</groupId>
+            <artifactId>spring-kafka</artifactId>
+            <version>2.9.12</version>
+        </dependency>
+
         <!-- mysql, JDBC, flyway, mybatis  START -->
         <dependency>
             <groupId>mysql</groupId>
@@ -127,6 +134,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>cn.wuyujin.demo.Wuyujin1997Application</mainClass>
+                </configuration>
             </plugin>
         </plugins>
     </build>

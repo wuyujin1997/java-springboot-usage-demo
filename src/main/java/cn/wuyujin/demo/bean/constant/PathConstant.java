@@ -11,5 +11,7 @@ public interface PathConstant {
 
     String V1_INTEGRATE = "/v1/integrate";
     String INTEGRATE_REDIS = "/redis";
+    String INTEGRATE_KAFKA_STRING = "/kafka/string";
+    String INTEGRATE_KAFKA_OBJECT = "/kafka/object";
 
 }
