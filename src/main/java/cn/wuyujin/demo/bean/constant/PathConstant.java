@@ -9,4 +9,7 @@ public interface PathConstant {
     String V1_WEIBO = "/v1/demo";
     String WEIBO_GET_WEIBO_LIST = "/getWeiboList";
 
+    String V1_INTEGRATE = "/v1/integrate";
+    String INTEGRATE_REDIS = "/redis";
+
 }
